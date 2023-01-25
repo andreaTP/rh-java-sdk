@@ -16,28 +16,15 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
-    <!-- <kiota.utils.version>0.0.11-SNAPSHOT</kiota.utils.version> -->
     <kiota.utils.version>999-SNAPSHOT</kiota.utils.version>
-    <kiota.library.version>0.1.2</kiota.library.version>
+    <kiota.library.version>0.2.0</kiota.library.version>
   </properties>
-
-  <repositories>
-    <repository>
-        <id>jitpack.io</id>
-        <url>https://jitpack.io</url>
-    </repository>
-  </repositories>
 
   <dependencyManagement>
     <dependencies>
       <dependency>
         <groupId>com.microsoft.kiota</groupId>
         <artifactId>microsoft-kiota-abstractions</artifactId>
-        <version>${kiota.library.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>com.microsoft.kiota</groupId>
-        <artifactId>microsoft-kiota-http-okHttp</artifactId>
         <version>${kiota.library.version}</version>
       </dependency>
       <dependency>

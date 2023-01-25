@@ -21,10 +21,6 @@
     </dependency>
     <dependency>
       <groupId>com.microsoft.kiota</groupId>
-      <artifactId>microsoft-kiota-http-okHttp</artifactId>
-    </dependency>
-    <dependency>
-      <groupId>com.microsoft.kiota</groupId>
       <artifactId>microsoft-kiota-serialization-json</artifactId>
     </dependency>
     <dependency>
