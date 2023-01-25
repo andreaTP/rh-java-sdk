@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  
+  <parent>
+      <artifactId>rh-java-sdk</artifactId>
+      <groupId>com.github.andreaTP.rh-java-sdk</groupId>
+      <version>999-SNAPSHOT</version>
+      <relativePath>../pom.xml</relativePath>
+  </parent>
+
+  <artifactId>kas-fleet-manager-sdk</artifactId>
+  <name>KAS Fleet Manager SDK</name>
+
+  <dependencies>
+    <dependency>
+      <groupId>com.microsoft.kiota</groupId>
+      <artifactId>microsoft-kiota-abstractions</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>com.microsoft.kiota</groupId>
+      <artifactId>microsoft-kiota-http-okHttp</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>com.microsoft.kiota</groupId>
+      <artifactId>microsoft-kiota-serialization-json</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>com.microsoft.kiota</groupId>
+      <artifactId>microsoft-kiota-serialization-text</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>com.microsoft.kiota</groupId>
+      <artifactId>microsoft-kiota-serialization-form</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>com.google.code.findbugs</groupId>
+      <artifactId>jsr305</artifactId>
+    </dependency>
+  </dependencies>
+
+  <build>
+    <plugins>
+      <plugin>
+        <artifactId>kiota-maven-plugin</artifactId>
+        <groupId>com.github.andreaTP.kiota-utils</groupId>
+        <version>${kiota.utils.version}</version>
+        <executions>
+          <execution>
+            <goals>
+              <goal>generate</goal>
+            </goals>
+          </execution>
+        </executions>
+        <configuration>
+          <file>kas-fleet-manager.yaml</file>
+          <!-- Waiting on https://github.com/bf2fc6cc711aee1a0c2a/kas-fleet-manager/pull/1515 -->
+          <!-- <url>https://raw.githubusercontent.com/bf2fc6cc711aee1a0c2a/kas-fleet-manager/main/openapi/kas-fleet-manager.yaml</url> -->
+          <namespace>com.openshift.cloud.api.kas</namespace>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+
+</project>
