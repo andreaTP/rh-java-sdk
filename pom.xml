@@ -16,7 +16,7 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
-    <kiota.utils.version>999-SNAPSHOT</kiota.utils.version>
+    <kiota.utils.version>0.1.1</kiota.utils.version>
     <kiota.library.version>0.2.0</kiota.library.version>
   </properties>
 
