@@ -1320,8 +1320,8 @@ components:
       type: string
     Error:
       allOf:
-      # TODO: find a proper fix for this
-      # Adding again this block fixes the issue?
+      # workaround for https://github.com/microsoft/kiota/issues/2194
+      # - $ref: '#/components/schemas/ObjectReference'
       - description: General error response
         type: object
         properties:
@@ -1342,27 +1342,19 @@ components:
           class:
             type: string
             deprecated: true
-      - $ref: '#/components/schemas/ObjectReference'
-      - description: General error response
-        type: object
-        properties:
-          reason:
-            description: General reason for the error. Does not change between specific
-              occurrences.
+          # workaround for: https://github.com/microsoft/kiota/issues/2194
+          # allOf ObjectReference properties
+          id:
+            description: Unique identifier for the object. Not supported for all object
+              kinds.
             type: string
-          detail:
-            description: Detail specific to an error occurrence. May be different
-              depending on the condition(s) that trigger the error.
+          kind:
             type: string
-          code:
-            format: int32
-            type: integer
-          error_message:
+            readOnly: true
+          href:
+            description: Link path to request the object. Not supported for all object
+              kinds.
             type: string
-            deprecated: true
-          class:
-            type: string
-            deprecated: true
     ErrorList:
       allOf:
       - $ref: '#/components/schemas/List'
