@@ -53,7 +53,7 @@
         <configuration>
           <file>kafka-admin-rest.yaml</file>
           <!-- TODO: 2 bugs in Kiota - inheritance on Error and name clash on Consumer -->
-          <!-- <url>https://raw.githubusercontent.com/bf2fc6cc711aee1a0c2a/kafka-admin-api/main/kafka-admin/.openapi/kafka-admin-rest.yaml</url> -->
+          <!-- <url>${kafka-instance-sdk.url}</url> -->
           <namespace>com.openshift.cloud.api.kas.auth</namespace>
         </configuration>
       </plugin>

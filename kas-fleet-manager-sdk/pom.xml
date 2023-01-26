@@ -53,7 +53,7 @@
         <configuration>
           <file>kas-fleet-manager.yaml</file>
           <!-- Waiting on https://github.com/bf2fc6cc711aee1a0c2a/kas-fleet-manager/pull/1515 -->
-          <!-- <url>https://raw.githubusercontent.com/bf2fc6cc711aee1a0c2a/kas-fleet-manager/main/openapi/kas-fleet-manager.yaml</url> -->
+          <!-- <url>${kas-fleet-manager-sdk.url}</url> -->
           <namespace>com.openshift.cloud.api.kas</namespace>
         </configuration>
       </plugin>

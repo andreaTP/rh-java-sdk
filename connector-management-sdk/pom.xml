@@ -51,7 +51,7 @@
           </execution>
         </executions>
         <configuration>
-          <url>https://raw.githubusercontent.com/bf2fc6cc711aee1a0c2a/kas-fleet-manager/main/openapi/connector_mgmt.yaml</url>
+          <url>${connector-management-sdk.url}</url>
           <namespace>com.openshift.cloud.api.connector</namespace>
         </configuration>
       </plugin>

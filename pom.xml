@@ -16,8 +16,17 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
-    <kiota.utils.version>0.1.1</kiota.utils.version>
+    <kiota.utils.version>0.1.2</kiota.utils.version>
     <kiota.library.version>0.2.0</kiota.library.version>
+    <findbugs.version>3.0.0</findbugs.version>
+
+    <connector-management-sdk.url>https://raw.githubusercontent.com/bf2fc6cc711aee1a0c2a/kas-fleet-manager/main/openapi/connector_mgmt.yaml</connector-management-sdk.url>
+    <kafka-instance-sdk.url>https://raw.githubusercontent.com/bf2fc6cc711aee1a0c2a/kafka-admin-api/main/kafka-admin/.openapi/kafka-admin-rest.yaml</kafka-instance-sdk.url>
+    <kas-fleet-manager-sdk.url>https://raw.githubusercontent.com/bf2fc6cc711aee1a0c2a/kas-fleet-manager/main/openapi/kas-fleet-manager.yaml</kas-fleet-manager-sdk.url>
+    <registry-instance-sdk.url>https://raw.githubusercontent.com/Apicurio/apicurio-registry/main/common/src/main/resources/META-INF/openapi.json</registry-instance-sdk.url>
+    <registry-management-sdk.url>https://raw.githubusercontent.com/bf2fc6cc711aee1a0c2a/srs-fleet-manager/main/core/src/main/resources/srs-fleet-manager.json</registry-management-sdk.url>
+    <service-accounts-sdk.url>https://sso.redhat.com/auth/realms/redhat-external/apis/openapi.yaml</service-accounts-sdk.url>
+    <smartevents-management-sdk.url>https://raw.githubusercontent.com/5733d9e2be6485d52ffa08870cabdee0/sandbox/main/openapi/smartevents_mgmt_v2.yaml</smartevents-management-sdk.url>
   </properties>
 
   <dependencyManagement>
@@ -45,7 +54,7 @@
       <dependency>
         <groupId>com.google.code.findbugs</groupId>
         <artifactId>jsr305</artifactId>
-        <version>3.0.0</version>
+        <version>${findbugs.version}</version>
       </dependency>
     </dependencies>
   </dependencyManagement>
@@ -58,11 +67,11 @@
   </pluginRepositories>
 
   <modules>
-    <module>kas-fleet-manager-sdk</module>
     <module>connector-management-sdk</module>
     <module>kafka-instance-sdk</module>
-    <module>registry-management-sdk</module>
+    <module>kas-fleet-manager-sdk</module>
     <module>registry-instance-sdk</module>
+    <module>registry-management-sdk</module>
     <module>service-accounts-sdk</module>
     <module>smartevents-management-sdk</module>
   </modules>

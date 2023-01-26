@@ -51,7 +51,7 @@
           </execution>
         </executions>
         <configuration>
-          <url>https://raw.githubusercontent.com/5733d9e2be6485d52ffa08870cabdee0/sandbox/main/openapi/smartevents_mgmt_v2.yaml</url>
+          <url>${smartevents-management-sdk.url}</url>
           <namespace>com.openshift.cloud.api.smartevents</namespace>
         </configuration>
       </plugin>

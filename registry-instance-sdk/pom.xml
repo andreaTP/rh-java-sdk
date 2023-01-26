@@ -51,7 +51,7 @@
           </execution>
         </executions>
         <configuration>
-          <url>https://raw.githubusercontent.com/Apicurio/apicurio-registry/main/common/src/main/resources/META-INF/openapi.json</url>
+          <url>${registry-instance-sdk.url}</url>
           <namespace>com.openshift.cloud.api.registry.instance</namespace>
         </configuration>
       </plugin>

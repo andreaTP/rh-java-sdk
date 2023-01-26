@@ -53,7 +53,7 @@
         <configuration>
           <!-- https://github.com/bf2fc6cc711aee1a0c2a/srs-fleet-manager/pull/326 -->
           <!-- https://github.com/OAI/OpenAPI-Specification/issues/3069#issuecomment-1304926440 -->
-          <!-- <url>https://raw.githubusercontent.com/bf2fc6cc711aee1a0c2a/srs-fleet-manager/main/core/src/main/resources/srs-fleet-manager.json</url> -->
+          <!-- <url>${registry-management-sdk.url}</url> -->
           <file>srs-fleet-manager.json</file>
           <namespace>com.openshift.cloud.api.srs</namespace>
         </configuration>
