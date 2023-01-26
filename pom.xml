@@ -69,7 +69,7 @@
   <modules>
     <module>connector-management-sdk</module>
     <module>kafka-instance-sdk</module>
-    <module>kas-fleet-manager-sdk</module>
+    <module>kafka-management-sdk</module>
     <module>registry-instance-sdk</module>
     <module>registry-management-sdk</module>
     <module>service-accounts-sdk</module>

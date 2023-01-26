@@ -11,8 +11,8 @@
       <relativePath>../pom.xml</relativePath>
   </parent>
 
-  <artifactId>kas-fleet-manager-sdk</artifactId>
-  <name>KAS Fleet Manager SDK</name>
+  <artifactId>kafka-management-sdk</artifactId>
+  <name>Kafka Management SDK</name>
 
   <dependencies>
     <dependency>
