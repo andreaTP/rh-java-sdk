@@ -1246,7 +1246,6 @@ components:
         - page
         - size
         - total
-        - items
       type: object
       properties:
         kind:
@@ -1257,10 +1256,6 @@ components:
           type: integer
         total:
           type: integer
-        items:
-          type: array
-          items:
-            $ref: "#/components/schemas/ObjectReference"
     Error:
         type: object
         required: [id, kind, href, code, reason]
@@ -1287,6 +1282,7 @@ components:
       allOf:
         - $ref: "#/components/schemas/List"
         - type: object
+          required: [ items ]
           properties:
             items:
               type: array
@@ -1388,6 +1384,7 @@ components:
       allOf:
         - $ref: "#/components/schemas/List"
         - type: object
+          required: [ items ]
           example:
             kind: "KafkaRequestList"
             page: "1"
@@ -1405,6 +1402,7 @@ components:
       allOf:
         - $ref: "#/components/schemas/List"
         - type: object
+          required: [ items ]
           example:
             kind: "ClusterList"
             page: "1"
@@ -1493,6 +1491,7 @@ components:
     SupportedKafkaInstanceTypesList:
       allOf:
         - type: object
+          required: [ items ]
           example:
             instance_types:
               $ref: '#/components/examples/SupportedKafkaInstanceTypeListExample'
@@ -1630,6 +1629,7 @@ components:
       allOf:
         - $ref: "#/components/schemas/List"
         - type: object
+          required: [ items ]
           example:
             kind: "CloudProviderList"
             page: "1"
@@ -1647,6 +1647,7 @@ components:
       allOf:
         - $ref: "#/components/schemas/List"
         - type: object
+          required: [ items ]
           example:
             kind: "CloudRegionList"
             page: "1"
