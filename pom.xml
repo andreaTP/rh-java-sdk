@@ -20,6 +20,7 @@
     <kiota.library.version>0.2.0</kiota.library.version>
     <findbugs.version>3.0.0</findbugs.version>
 
+    <account-management-sdk.url>https://api.openshift.com/api/accounts_mgmt/v1/openapi</account-management-sdk.url>
     <connector-management-sdk.url>https://raw.githubusercontent.com/bf2fc6cc711aee1a0c2a/kas-fleet-manager/main/openapi/connector_mgmt.yaml</connector-management-sdk.url>
     <kafka-instance-sdk.url>https://raw.githubusercontent.com/bf2fc6cc711aee1a0c2a/kafka-admin-api/main/kafka-admin/.openapi/kafka-admin-rest.yaml</kafka-instance-sdk.url>
     <kas-fleet-manager-sdk.url>https://raw.githubusercontent.com/bf2fc6cc711aee1a0c2a/kas-fleet-manager/main/openapi/kas-fleet-manager.yaml</kas-fleet-manager-sdk.url>
@@ -67,6 +68,7 @@
   </pluginRepositories>
 
   <modules>
+    <module>account-management-sdk</module>
     <module>connector-management-sdk</module>
     <module>kafka-instance-sdk</module>
     <module>kafka-management-sdk</module>
