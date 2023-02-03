@@ -51,10 +51,9 @@
           </execution>
         </executions>
         <configuration>
-          <!-- <file>kafka-admin-rest.yaml</file> -->
-          <!-- name clash on Consumer: https://github.com/microsoft/kiota/pull/2193 (fixed) -->
-          <!-- incosistent kiota generation when an ApiException inherits from another class: https://github.com/microsoft/kiota/issues/2194 (fixed) -->
-          <url>${kafka-instance-sdk.url}</url>
+          <file>kafka-admin-rest.yaml</file>
+          <!-- Problem with inheritance from List again and items re-declared -->
+          <!-- <url>${kafka-instance-sdk.url}</url> -->
           <namespace>com.openshift.cloud.api.kas.auth</namespace>
         </configuration>
       </plugin>
