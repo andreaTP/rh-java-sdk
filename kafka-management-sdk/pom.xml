@@ -7,7 +7,7 @@
   <parent>
       <artifactId>rh-java-sdk</artifactId>
       <groupId>com.github.andreaTP.rh-java-sdk</groupId>
-      <version>0.0.6</version>
+      <version>999-SNAPSHOT</version>
       <relativePath>../pom.xml</relativePath>
   </parent>
 

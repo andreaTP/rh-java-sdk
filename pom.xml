@@ -5,7 +5,7 @@
   <modelVersion>4.0.0</modelVersion>
   <artifactId>rh-java-sdk</artifactId>
   <groupId>com.github.andreaTP.rh-java-sdk</groupId>
-  <version>0.0.6</version>
+  <version>999-SNAPSHOT</version>
   <name>POC for Red Hat Java SDKs generated with Kiota</name>
   <packaging>pom</packaging>
 
