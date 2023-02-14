@@ -51,8 +51,6 @@
           </execution>
         </executions>
         <configuration>
-          <!-- <file>account-management.yaml</file> -->
-          <!-- Error class inherhiting from ObjectReference https://github.com/microsoft/kiota/issues/2194 -->
           <url>${account-management-sdk.url}</url>
           <!-- This is Openshift API, should it belong to a different project? -->
           <namespace>com.openshift.cloud.api.accountmanagement</namespace>
