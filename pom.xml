@@ -16,8 +16,8 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
-    <kiota.utils.version>0.1.6</kiota.utils.version>
-    <kiota.library.version>0.2.0</kiota.library.version>
+    <kiota.utils.version>0.1.7</kiota.utils.version>
+    <kiota.library.version>0.2.1</kiota.library.version>
     <findbugs.version>3.0.0</findbugs.version>
 
     <account-management-sdk.url>https://api.openshift.com/api/accounts_mgmt/v1/openapi</account-management-sdk.url>
