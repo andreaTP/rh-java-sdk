@@ -51,9 +51,7 @@
           </execution>
         </executions>
         <configuration>
-          <file>kafka-admin-rest.yaml</file>
-          <!-- Problem with inheritance from List again and items re-declared -->
-          <!-- <url>${kafka-instance-sdk.url}</url> -->
+          <url>${kafka-instance-sdk.url}</url>
           <namespace>com.openshift.cloud.api.kas.auth</namespace>
         </configuration>
       </plugin>
