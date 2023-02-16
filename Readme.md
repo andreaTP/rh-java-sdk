@@ -56,7 +56,7 @@ To easily use RH SSO add also:
 </dependency>
 ```
 
-After obtaining an offline token following the instructions here: // https://access.redhat.com/articles/3626371
+After obtaining an offline token following the instructions [here](https://access.redhat.com/articles/3626371).
 You can use the SDKs in your project like:
 
 ```java
