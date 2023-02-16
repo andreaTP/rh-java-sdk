@@ -35,6 +35,20 @@
       <groupId>com.google.code.findbugs</groupId>
       <artifactId>jsr305</artifactId>
     </dependency>
+
+    <!--  test  -->
+    <dependency>
+      <groupId>com.github.andreaTP.kiota-utils</groupId>
+      <artifactId>kiota-rh-auth</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.junit.jupiter</groupId>
+      <artifactId>junit-jupiter-api</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.junit.jupiter</groupId>
+      <artifactId>junit-jupiter-engine</artifactId>
+    </dependency>
   </dependencies>
 
   <build>
@@ -55,6 +69,11 @@
           <!-- This is Openshift API, should it belong to a different project? -->
           <namespace>com.openshift.cloud.api.accountmanagement</namespace>
         </configuration>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <version>3.0.0-M9</version>
       </plugin>
     </plugins>
   </build>

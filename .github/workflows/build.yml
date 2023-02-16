@@ -2,7 +2,7 @@ name: Build Workflow
 
 on:
   push:
-  pull_request:
+    branch: [ "main" ]
 
 jobs:
   build:
@@ -17,4 +17,6 @@ jobs:
           distribution: 'temurin'
           cache: 'maven'
       - name: Compile
+        env:
+          OFFLINE_TOKEN: ${{ secrets.OFFLINE_TOKEN }}
         run: mvn clean install

@@ -52,15 +52,7 @@ To easily use RH SSO add also:
 <dependency>
     <groupId>com.github.andreaTP.kiota-utils</groupId>
     <artifactId>kiota-rh-auth</artifactId>
-    <version>0.1.6</version>
-</dependency>
-```
-and to use the default OkHttp implementation:
-```xml
-<dependency>
-  <groupId>com.microsoft.kiota</groupId>
-  <artifactId>microsoft-kiota-http-okHttp</artifactId>
-  <version>0.2.0</version>
+    <version>version</version>
 </dependency>
 ```
 
