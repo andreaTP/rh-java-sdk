@@ -50,7 +50,7 @@ Add the required dependencies to your `pom.xml` file:
 To easily use RH SSO add also:
 ```xml
 <dependency>
-    <groupId>com.github.andreaTP.kiota-utils</groupId>
+    <groupId>com.redhat.cloud</groupId>
     <artifactId>kiota-rh-auth</artifactId>
     <version>version</version>
 </dependency>

@@ -38,7 +38,7 @@
 
     <!--  test  -->
     <dependency>
-      <groupId>com.github.andreaTP.kiota-utils</groupId>
+      <groupId>com.redhat.cloud</groupId>
       <artifactId>kiota-rh-auth</artifactId>
     </dependency>
     <dependency>
@@ -55,7 +55,7 @@
     <plugins>
       <plugin>
         <artifactId>kiota-maven-plugin</artifactId>
-        <groupId>com.github.andreaTP.kiota-utils</groupId>
+        <groupId>com.redhat.cloud</groupId>
         <version>${kiota.utils.version}</version>
         <executions>
           <execution>

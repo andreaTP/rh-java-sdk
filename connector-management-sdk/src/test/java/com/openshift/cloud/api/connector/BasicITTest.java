@@ -1,6 +1,6 @@
 package com.openshift.cloud.api.connector;
 
-import com.github.andreatp.kiota.auth.RHAccessTokenProvider;
+import com.redhat.cloud.kiota.auth.RHAccessTokenProvider;
 import com.microsoft.kiota.authentication.BaseBearerTokenAuthenticationProvider;
 import com.microsoft.kiota.http.OkHttpRequestAdapter;
 import com.openshift.cloud.api.connector.ApiClient;

@@ -1,6 +1,6 @@
 package com.openshift.cloud.api.srs;
 
-import com.github.andreatp.kiota.auth.RHAccessTokenProvider;
+import com.redhat.cloud.kiota.auth.RHAccessTokenProvider;
 import com.openshift.cloud.api.srs.ApiClient;
 import com.microsoft.kiota.authentication.BaseBearerTokenAuthenticationProvider;
 import com.microsoft.kiota.http.OkHttpRequestAdapter;

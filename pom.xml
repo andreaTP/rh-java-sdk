@@ -16,7 +16,7 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
-    <kiota.utils.version>0.1.7</kiota.utils.version>
+    <kiota.utils.version>0.0.1</kiota.utils.version>
     <kiota.library.version>0.2.1</kiota.library.version>
     <findbugs.version>3.0.0</findbugs.version>
 
@@ -61,7 +61,7 @@
       </dependency>
 
       <dependency>
-        <groupId>com.github.andreaTP.kiota-utils</groupId>
+        <groupId>com.redhat.cloud</groupId>
         <artifactId>kiota-rh-auth</artifactId>
         <version>${kiota.utils.version}</version>
         <scope>test</scope>
@@ -80,20 +80,6 @@
       </dependency>
     </dependencies>
   </dependencyManagement>
-
-  <pluginRepositories>
-    <pluginRepository>
-      <id>jitpack.io</id>
-      <url>https://jitpack.io</url>
-    </pluginRepository>
-  </pluginRepositories>
-
-  <repositories>
-    <repository>
-      <id>jitpack.io</id>
-      <url>https://jitpack.io</url>
-    </repository>
-  </repositories>
 
   <modules>
     <module>account-management-sdk</module>
